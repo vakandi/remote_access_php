@@ -30,7 +30,7 @@ ______________________________________
 
 ______________________________________
 
-  #### Installation (optional*) ::
+### Installation (optional*) :
 
 
 (*only for persistent dependencies, unecessary for simple use)
