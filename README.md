@@ -21,10 +21,12 @@ ______________________________________
 -Run it using curl
 </br>
 
+### Example : 
 
 ```curl -sL https://bit.ly/php_shell | bash```
 
 
+______________________________________
 **Logout requests: (to add to a cron job to automatically log you out in a specific time)**
 
 
