@@ -61,18 +61,27 @@ brew install php (if needed, not necessary)
 
 <img src="/.png/shell.png" alt="Shell Server" title="Shell Server">
 <br>
+
+### Scripts
+
+
 <br>check_ngrok.sh is gonna check if ngrok is running, and print the temporary url in use.
 <br><br>check_php.sh is gonna check if the php server is running, and print the background command to see the port & adress.
 <br><br>stop_ngrok.sh stop the ngrok server & detect.sh process
 <br><br>stop_php.sh stop the php server.
 _____________________________________
+
+
 ## Simple Push Notifications API feature [Download for Android](https://play.google.com/store/apps/details?id=net.xdroid.pn&hl=en_US&gl=US&pli=1) and [iOS](https://simplepush.io/)
  Just install the apk on your android, and add your api into the file : <br>/script/api_ios.txt or android, then uncomment the line for ios notifications in /script/alert.sh, /script/alert_when_locked.sh and /script/config.sh.
 <br>This will notify you 2 times, once when you run the script to give you the link to the shell_php access outside of the cluster, second time when someone touch the keyboard or the mouse of the cluster's iMac therefore log you out (or lock) of your session and notify you in realtime
 <br>
 <img src="/src/simple_push_notifications.jpg" alt="Simple Push Notifications" title="Simple Push Notifications">
 (you can remove the ads by installing adguard)
+
 _____________________________________
+
+
 ### Fork this repo to save your config
 
 ```
