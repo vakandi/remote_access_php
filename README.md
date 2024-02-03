@@ -12,9 +12,11 @@ ______________________________________
 </br>
 </br>
 
-## Easy Use
+## Usage
 
--Fork the repo
+-Fork the repo and change what you need 
+</br>
+(shell_access file contain the API key you need to receive the link in notification)
 </br>
 -Create a bit.ly short link
 </br>
