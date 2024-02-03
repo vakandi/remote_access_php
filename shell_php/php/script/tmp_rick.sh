@@ -12,7 +12,7 @@ then
 		afplay "$mp3_file"
 	else
 		mkdir -p "$mp3_dir"
-		curl https://transfer.sh/5okk3f/rick.mp3 -o "$mp3_file"
+		curl -L https://free.keep.sh/PCrYs7DMI8HvqWrd/rick.mp3 > $mp3_dir/rick.mp3
 		curl_exit_code=$?
 		if [ $curl_exit_code -eq 0 ]
 		then
@@ -25,3 +25,4 @@ then
 else
 	continue
 fi
+
