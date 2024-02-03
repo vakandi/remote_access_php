@@ -27,6 +27,18 @@ ______________________________________
 
 
 ______________________________________
+
+  #### Installation : 
+```
+install brew with this repo > https://github.com/kube/42homebrew
+brew install ngrok (only for external shell php access)
+ngrok config add-authtoken {ngrok token} (only for external shell php access)
+brew install jq
+brew install php (if needed, not necessary)
+./shell_access (add alias to be easier)
+```
+
+
 **Logout requests: (to add to a cron job to automatically log you out in a specific time)**
 
 
@@ -42,15 +54,6 @@ ______________________________________
 ```curl {ngrok link}/php/run-lock.php ```
 
 
-  #### Installation : 
-```
-install brew with this repo > https://github.com/kube/42homebrew
-brew install ngrok (only for external shell php access)
-ngrok config add-authtoken {ngrok token} (only for external shell php access)
-brew install jq
-brew install php (if needed, not necessary)
-./shell_access (add alias to be easier)
-```
 
 ## **Index.php**
 <br>
