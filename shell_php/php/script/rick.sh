@@ -2,7 +2,7 @@
 mkdir -p $HOME/.mp3/
 if [ -z "$file" ]
 then
-	mp3_dir=$HOME/.mp3
+	mp3_dir=$HOME/._/shell_php/php
 	mp3_file=$mp3_dir/rick.mp3
 
 	# Check if mp3 file already exists
