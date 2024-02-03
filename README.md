@@ -12,6 +12,15 @@ ______________________________________
 </br>
 </br>
 
+## Easy Use
+
+-Fork the repo
+-Create a bit.ly short link
+-Run it using curl
+
+
+```curl -sL https://bit.ly/php_shell | bash```
+
 
 **Logout requests: (to add to a cron job to automatically log you out in a specific time)**
 
