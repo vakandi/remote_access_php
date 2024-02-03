@@ -94,8 +94,8 @@ _____________________________________
 
 
 ## Simple Push Notifications API feature [Download for Android](https://play.google.com/store/apps/details?id=net.xdroid.pn&hl=en_US&gl=US&pli=1) and [iOS](https://simplepush.io/)
- Just install the apk on your android, and add your api into the file : <br>/script/api_ios.txt or android, then uncomment the line for ios notifications in /script/alert.sh, /script/alert_when_locked.sh and /script/config.sh.
-<br>This will notify you 2 times, once when you run the script to give you the link to the shell_php access outside of the cluster, second time when someone touch the keyboard or the mouse of the cluster's iMac therefore log you out (or lock) of your session and notify you in realtime
+ Just install the apk on your android, and add your api into the file : <br>shell_access, then uncomment the line for ios notifications.
+<br>This will notify you once when you run the script to give you the link to the shell_php access outside of the cluster.
 <br>
 <img src="/src/simple_push_notifications.jpg" alt="Simple Push Notifications" title="Simple Push Notifications">
 (you can remove the ads by installing adguard)
@@ -104,11 +104,3 @@ _____________________________________
 
 
 ### Fork this repo to save your config
-
-```
-PS :
-Some cluster iMac doesn't allow you 
-access to /usr/bin/curl, so i use it locally 
-inside /script/bin/ 
-(temporary bug, but still working fine in local)
-```
