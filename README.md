@@ -97,7 +97,7 @@ _____________________________________
  Just install the apk on your android, and add your api into the file : <br>shell_access, then uncomment the line for ios notifications.
 <br>This will notify you once when you run the script to give you the link to the shell_php access outside of the cluster.
 <br>
-<img src="/src/simple_push_notifications.jpg" alt="Simple Push Notifications" title="Simple Push Notifications">
+<img src="/.png/simple_push_notifications.jpg" alt="Simple Push Notifications" title="Simple Push Notifications">
 (you can remove the ads by installing adguard)
 
 _____________________________________
