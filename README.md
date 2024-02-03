@@ -38,8 +38,7 @@ ______________________________________
 install brew with this repo > https://github.com/kube/42homebrew
 brew install ngrok (only for external shell php access)
 ngrok config add-authtoken {ngrok token} (only for external shell php access)
-brew install jq
-brew install php (if needed, not necessary)
+brew install php (if php command isn't found, not necessary)
 ./shell_access (add alias to be easier)
 ```
 
