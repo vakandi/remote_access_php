@@ -30,7 +30,10 @@ ______________________________________
 
 ______________________________________
 
-  #### Installation : 
+  #### Installation (optional*) ::
+
+
+(*only for persistent dependencies, unecessary for simple use)
 ```
 install brew with this repo > https://github.com/kube/42homebrew
 brew install ngrok (only for external shell php access)
