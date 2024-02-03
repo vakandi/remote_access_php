@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<link rel="apple-touch-icon" sizes="180x180" href="/ico/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/ico/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/ico/favicon-16x16.png">
+<link rel="manifest" href="/ico/site.webmanifest">
+	  <meta charset="utf-8">
+    <title>Webcam Live Stream</title>
+  </head>
+  <body>
+    <img src="webcam.jpg" alt="Webcam Stream">
+    <script>
+      var img = document.querySelector('img');
+      var intervalId;
+
+      window.onload = function() {
+        intervalId = setInterval(function() {
+          // Call the shell script to take photos
+          execShellCommand('script/photos.sh');
+          img.src = "webcam.jpg?" + new Date().getTime();
+        }, 200);
+      };
+
+      window.onunload = function() {
+        clearInterval(intervalId);
+      };
+
+      function execShellCommand(command) {
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "/php/exec.php?cmd=" + command, true);
+        xhr.send();
+      }
+    </script>
+  </body>
+</html>
+
