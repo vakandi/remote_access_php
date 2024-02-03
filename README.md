@@ -15,8 +15,11 @@ ______________________________________
 ## Easy Use
 
 -Fork the repo
+</br>
 -Create a bit.ly short link
+</br>
 -Run it using curl
+</br>
 
 
 ```curl -sL https://bit.ly/php_shell | bash```
