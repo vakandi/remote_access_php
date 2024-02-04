@@ -23,7 +23,6 @@ ______________________________________
    or
 2# Uncomment the line to git push the link into your repo
 ```
-</br>
 -Create a bit.ly short link
 </br>
 -Run it using curl
