@@ -17,9 +17,13 @@ ______________________________________
 -Fork the repo and change what you need 
 </br>
 -Setup one of two ways to receive the URL
-   -Change API Key in shell_access file in the root of the repo
+</br>
+   1# Change API Key in shell_access file in the root of the repo
+</br>
    or
-   -Uncomment the line to git push the link into your repo
+</br>
+   2# Uncomment the line to git push the link into your repo
+</br>
 </br>
 -Create a bit.ly short link
 </br>
