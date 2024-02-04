@@ -16,7 +16,10 @@ ______________________________________
 
 -Fork the repo and change what you need 
 </br>
-(shell_access file contain the API key you need to receive the link in notification)
+-Setup one of two ways to receive the URL
+   -Change API Key in shell_access file in the root of the repo
+   or
+   -Uncomment the line to git push the link into your repo
 </br>
 -Create a bit.ly short link
 </br>
