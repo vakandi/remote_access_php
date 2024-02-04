@@ -19,11 +19,9 @@ ______________________________________
 -Setup one of two ways to receive the URL
 </br>
 ```
-   1# Change API Key in shell_access file in the root of the repo
-</br>
+1# Change API Key in shell_access file in the root of the repo
    or
-</br>
-   2# Uncomment the line to git push the link into your repo
+2# Uncomment the line to git push the link into your repo
 ```
 </br>
 -Create a bit.ly short link
