@@ -6,10 +6,8 @@
 # Full Remote Access (SSH, WebcamLive, Automatic Actions...)
 ## **With Access to a Cluster's shell through internet**
 </br>
-</br>
-______________________________________
 
-</br>
+______________________________________
 </br>
 
 ## Usage
