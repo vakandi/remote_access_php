@@ -25,7 +25,7 @@ ______________________________________
 ```
 -Create a bit.ly short link
 </br>
--Run it using curl
+-Run it using curl (on MacOS Terminal it will reduce the window's size, not iTerm)
 </br>
 
 ### Example : 
